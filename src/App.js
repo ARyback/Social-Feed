@@ -6,9 +6,14 @@ function App() {
 
   const [posts, setPosts] = useState([{name: "David LaGrange", message: "I love playing guitar. Does anyone want to play with me?"}]);
 
+  function addNewPost(post) {
+    let tempPosts = [post, ...posts];
+    setPosts(tempPosts);
+  }
+
   return (
     <div>
-      <AddPostForm />
+      <AddPostForm addNewPostProperty={addNewPost}/>
       <DisplayPosts parentPosts={posts}/>
     </div>
   );
