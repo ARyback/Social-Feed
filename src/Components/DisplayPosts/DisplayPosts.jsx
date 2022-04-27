@@ -1,3 +1,6 @@
+import LikeButton from "../LikeButton/LikeButton";
+import DislikeButton from "../DislikeButton/DislikeButton";
+
 const DisplayPosts = (props) => {
   return (
     <table>
@@ -5,6 +8,7 @@ const DisplayPosts = (props) => {
         <tr>
           <th>Name</th>
           <th>Post</th>
+          <th>Date</th>
         </tr>
       </thead>
       <tbody>
@@ -13,6 +17,7 @@ const DisplayPosts = (props) => {
             <tr>
               <td>{post.name}</td>
               <td>{post.post}</td>
+              <td>{post.date}</td>
             </tr>
           );
         })}
@@ -21,11 +26,13 @@ const DisplayPosts = (props) => {
   );
 };
 
-export default DisplayPosts;
-// ///////////////////////////////////////////// demo below
 
-// // Post Component (FILE)
-// const Post = ({ element }) => {
+export default DisplayPosts;
+
+/* /////////////////////////////////////////////// demo below
+
+// Post Component (FILE)
+// const Post = ({ element }) => { 
 //   return (
 //     <div>
 //       <h2>{element.personsName}</h2>
@@ -38,11 +45,11 @@ export default DisplayPosts;
 //   );
 // };
 
-// // Mapper Component (FILE)
+// Mapper Component (FILE)
 // const Arraymapper = (props) => {
 //   return (
 //     <ul>
 //       {props.array.map((el) => <li><Post element={el} /></li>)}
 //     </ul>
 //   );
-// };
+// };  */
