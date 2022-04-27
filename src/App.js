@@ -4,7 +4,7 @@ import AddPostForm from './Components/AddPost/AddPostForm';
 
 function App() {
 
-  const [posts, setPosts] = useState([{name: "David LaGrange", message: "I love playing guitar. Does anyone want to play with me?"}]);
+  const [posts, setPosts] = useState([{name: "David LaGrange", post: "I love playing guitar. Does anyone want to play with me?"}]);
 
   function addNewPost(post) {
     let tempPosts = [post, ...posts];

@@ -12,7 +12,7 @@ const DisplayPosts = (props) => {
           return (
             <tr>
               <td>{post.name}</td>
-              <td>{post.message}</td>
+              <td>{post.post}</td>
             </tr>
           );
         })}
