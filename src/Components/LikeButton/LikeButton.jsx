@@ -1,5 +1,5 @@
 const LikeButton = (props) => {
-    return ( "default for a like button" );
+    return ( "default for a like" );
 }
  
 export default LikeButton;

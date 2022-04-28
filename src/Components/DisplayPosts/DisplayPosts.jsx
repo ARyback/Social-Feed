@@ -3,26 +3,19 @@ import DislikeButton from "../DislikeButton/DislikeButton";
 
 const DisplayPosts = (props) => {
   return (
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Post</th>
-          <th>Date</th>
-        </tr>
-      </thead>
-      <tbody>
-        {props.parentPosts.map((post) => {
-          return (
-            <tr>
-              <td>{post.name}</td>
-              <td>{post.post}</td>
-              <td>{post.date}</td>
-            </tr>
+      <div>
+          {props.parentPosts.map((post) => {
+            return (
+              <div>
+                <h2>{post.name}</h2>
+                <p>{post.post}</p>
+                <h3>{post.date}</h3>
+                <button onClick={console.log("I like this!")}>Like</button>
+                <button onClick={console.log("I like this!")}>Dislike</button>
+              </div>
           );
         })}
-      </tbody>
-    </table>
+      </div>
   );
 };
 
