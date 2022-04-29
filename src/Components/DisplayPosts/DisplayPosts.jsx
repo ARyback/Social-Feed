@@ -1,7 +1,7 @@
 import LikeButton from "../LikeButton/LikeButton";
 import DislikeButton from "../DislikeButton/DislikeButton";
-import AddDate from "../AddDate/AddDate";
 import './DisplayPosts.css';
+import ButtonCombination from "../ButtonCombination/ButtonComination";
 
 const DisplayPosts = (props) => {
   return (
@@ -12,7 +12,6 @@ const DisplayPosts = (props) => {
                 <h2>{post.name}</h2>
                 <p>{post.post}</p>
                 <h3>{post.date}</h3>
-                {/* <AddDate /> */}
                 <LikeButton />
                 <DislikeButton />
               </div>

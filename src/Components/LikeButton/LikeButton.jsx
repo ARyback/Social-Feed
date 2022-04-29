@@ -1,16 +1,20 @@
 import { BsHandThumbsUp } from "react-icons/bs";
 import './LikeButton.css'
+import React, { useState } from 'react';
 
 const LikeButton = (props) => {
-    function handleClick(){
+    const [buttonClass, setButtonClass] = useState("inactive");
 
+    function handleClick(){
+        if (buttonClass === "inactive") {
+            setButtonClass("active");
+        } else {
+            setButtonClass("inactive");
+        }
     }
-    return <div><button><BsHandThumbsUp/></button></div>;
-}
+
+    return <div><button className={buttonClass} onClick={handleClick}><BsHandThumbsUp/></button></div>;
+};
  
 export default LikeButton;
-
-//Need an if condition like on boolean. Only one can be greyed at one time. State watching the other state
-//Tutorial 8
-
 

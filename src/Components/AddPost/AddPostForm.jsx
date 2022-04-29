@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './AddPostForm.css'
-import AddDate from '../AddDate/AddDate';
 
 const AddPostForm = (props) => {
 
