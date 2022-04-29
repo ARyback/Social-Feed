@@ -1,4 +1,5 @@
-.form-grid {
+.adam-form-container {
     display: grid;
-    border-style: dashed;
+    place-content: center;
+    width: 1000px;
 }

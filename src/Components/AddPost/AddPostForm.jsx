@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './AddPostForm'
+import './AddPostForm.css'
+import AddDate from '../AddDate/AddDate';
 
 const AddPostForm = (props) => {
 
@@ -24,7 +25,7 @@ const AddPostForm = (props) => {
     }
 
     return (
-        <form onSubmit={handleSubmit} class="form-grid">
+        <form onSubmit={handleSubmit} className="adam-form-container">
             <label>Name</label>
             <input type="text" value={name} onChange={(event) => setName(event.target.value)}/>
             <label>Post</label>

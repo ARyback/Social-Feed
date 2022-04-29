@@ -1,17 +1,20 @@
 import LikeButton from "../LikeButton/LikeButton";
 import DislikeButton from "../DislikeButton/DislikeButton";
+import AddDate from "../AddDate/AddDate";
+import './DisplayPosts.css';
 
 const DisplayPosts = (props) => {
   return (
-      <div>
+      <div className="border-box">
           {props.parentPosts.map((post) => {
             return (
-              <div>
+              <div style={{backgroundColor:"lightblue", marginBottom:"10px", borderStyle:"groove" }}>
                 <h2>{post.name}</h2>
                 <p>{post.post}</p>
                 <h3>{post.date}</h3>
-                <button onClick={console.log("I like this!")}>Like</button>
-                <button onClick={console.log("I like this!")}>Dislike</button>
+                {/* <AddDate /> */}
+                <LikeButton />
+                <DislikeButton />
               </div>
           );
         })}

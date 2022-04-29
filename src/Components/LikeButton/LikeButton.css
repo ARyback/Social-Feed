@@ -1,0 +1,17 @@
+button {
+    background-color: lightblue;
+}
+
+button:hover {
+    background-color: #3782a7; 
+    color: white;
+}
+
+.active {
+    background-color: blue;
+}
+
+.inactive {
+    background-color: gray;
+
+}
