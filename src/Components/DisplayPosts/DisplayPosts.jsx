@@ -1,7 +1,7 @@
 import LikeButton from "../LikeButton/LikeButton";
 import DislikeButton from "../DislikeButton/DislikeButton";
 import './DisplayPosts.css';
-import ButtonCombination from "../ButtonCombination/ButtonComination";
+// import ButtonCombination from "../ButtonCombination/ButtonComination";
 
 const DisplayPosts = (props) => {
   return (
